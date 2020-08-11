@@ -1,0 +1,59 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import 'light';
+@import 'dark';
+
+body {
+  min-height: 100vh;
+}
+
+header {
+  .header__nav {
+    background: #303030;
+    color: #d0d0d0;
+
+    padding: 3px 0;
+  }
+
+  // .header__account {
+  //   position: absolute;
+  //   top: 1rem;
+  //   right: 0;
+  // }
+
+
+  &.header--default {
+    color: black;
+
+    .header__brand {
+      font-size: 2rem;
+    }
+  }
+
+  .header__brand {
+    padding: 1rem 0 4rem 0;
+
+    font-weight: bold;
+  }
+
+  > .container {
+    position: relative;
+  }
+
+  .header__tabs {
+    .nav-link {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      color: black;
+      font-weight: bold;
+
+      &.active {
+        border-bottom: 0.3rem solid #d05010;
+        padding-bottom: 0.2rem;
+      }
+    }
+  }
+}
+
+main {
+  padding: 2rem 0;
+}

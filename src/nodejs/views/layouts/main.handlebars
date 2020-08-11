@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>{{title}}</title>
+  
+  <link rel="stylesheet" media="screen" href="/app.css"/>
+  <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
+</head>
+
+<body class="body--colour-mode_{{body_colour_mode}}">
+<header class="header--default">
+  <div class="header__nav">
+    <div class="container">
+      <nav>
+        <div class="header_ident"></div>
+        <div class="header__account">{{account_info}}</div>
+      </nav>
+    </div>
+  </div>
+  <div class="container">
+    <div class="header__brand">{{site_title}}</div>
+
+    <nav class="nav header__tabs">
+      <a href="" class="nav-link active">Foo</a>
+      <a href="" class="nav-link">Bar</a>
+      <a href="" class="nav-link">Qux</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+{{{body}}}
+</main>
+
+</body>
+</html>
